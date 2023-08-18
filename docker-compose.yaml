@@ -9,6 +9,8 @@ services:
       - .env
     environment:
       POSTGRES_DB: ${POSTGRES_NAME}
+    ports:
+      - "5432:5432"
   django_gunicorn:
     volumes:
       - static:/static

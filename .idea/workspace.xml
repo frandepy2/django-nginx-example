@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3c905e0-0a11-4739-88b2-04db29241385" name="Changes" comment="corrige la importacion de archivos staticos">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="c3c905e0-0a11-4739-88b2-04db29241385" name="Changes" comment="Ajusta los setings para soportar los host trusted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prueba_compose/prueba_compose/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/prueba_compose/prueba_compose/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
       <workItem from="1692244901145" duration="1623000" />
       <workItem from="1692246536578" duration="3834000" />
       <workItem from="1692300648685" duration="824000" />
-      <workItem from="1692319000089" duration="14137000" />
+      <workItem from="1692319000089" duration="15632000" />
     </task>
     <task id="LOCAL-00001" summary="modelo basico de configuracion nginx">
       <option name="closed" value="true" />
@@ -120,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692321549477</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ajusta los setings para soportar los host trusted">
+      <option name="closed" value="true" />
+      <created>1692337075072</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692337075072</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modelo basico de configuracion nginx" />
     <MESSAGE value="corrige la importacion de archivos staticos" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrige la importacion de archivos staticos" />
+    <MESSAGE value="Ajusta los setings para soportar los host trusted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajusta los setings para soportar los host trusted" />
   </component>
 </project>
