@@ -4,9 +4,9 @@ services:
   db-dev:
     image: postgres:13
     volumes:
-      - ./postgre-data:/var/lib/postgresql/data
+      - ./var/data/db:/var/lib/postgresql/data
     env_file:
-      - .env
+      - .env.desarrollo
     environment:
       POSTGRES_DB: ${POSTGRES_NAME}
     ports:
@@ -15,7 +15,7 @@ services:
     volumes:
       - static:/static
     env_file:
-      - .env
+      - .env.desarrollo
     build:
       context: .
       dockerfile: Dockerfile-dev

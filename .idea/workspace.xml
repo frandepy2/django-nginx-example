@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c905e0-0a11-4739-88b2-04db29241385" name="Changes" comment="Correcciones en git ignore">
-      <change afterPath="$PROJECT_DIR$/Dockerfile-dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/entrypoint-dev.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.desarrollo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/delete-migrations.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile-prod" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile-prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-dev.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entrypoint-dev.sh" beforeDir="false" afterPath="$PROJECT_DIR$/entrypoint-dev.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entrypoint-prod.sh" beforeDir="false" afterPath="$PROJECT_DIR$/entrypoint-prod.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,21 +51,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature/dev-enviroment",
-    "last_opened_file_path": "/Users/franciscosanabria/PycharmProjects/prueba_compose",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/dev-enviroment&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/franciscosanabria/PycharmProjects/prueba_compose&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -74,7 +75,7 @@
       <recent name="$PROJECT_DIR$/f" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose-dev.yaml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose-prod.yaml: Compose Deployment">
     <configuration name="prueba_compose" type="Python.DjangoServer" factoryName="Django server">
       <module name="prueba_compose" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,12 +100,27 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose-dev.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="cms-is2">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="sourceFilePath" value="docker-compose-dev.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose-dev.yaml.django-dev: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="cms-is2">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="django-dev" />
+            </list>
+          </option>
           <option name="sourceFilePath" value="docker-compose-dev.yaml" />
         </settings>
       </deployment>
@@ -120,8 +136,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose-dev.yaml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose-prod.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose-dev.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose-dev.yaml.django-dev: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +154,8 @@
       <workItem from="1692246536578" duration="3834000" />
       <workItem from="1692300648685" duration="824000" />
       <workItem from="1692319000089" duration="16098000" />
-      <workItem from="1692384744146" duration="9948000" />
+      <workItem from="1692384744146" duration="10075000" />
+      <workItem from="1692472554352" duration="5650000" />
     </task>
     <task id="LOCAL-00001" summary="modelo basico de configuracion nginx">
       <option name="closed" value="true" />
