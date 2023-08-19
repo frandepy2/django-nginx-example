@@ -9,5 +9,5 @@ COPY ./prueba_compose /app
 
 WORKDIR /app
 
-COPY entrypoint-prod.sh /
-ENTRYPOINT ["sh", "/entrypoint-prod.sh"]
+COPY entrypoint-dev.sh /
+ENTRYPOINT ["sh", "/entrypoint-dev.sh"]
