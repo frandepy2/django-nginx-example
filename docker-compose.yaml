@@ -1,6 +1,16 @@
 version: '3.8'
 
 services:
+  db:
+    image: postgres:13
+    volumes:
+      - ./postgre-data:/var/lib/postgresql/data
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${POSTGRES_NAME}
+    ports:
+      - "5432:5432"
   django_gunicorn:
     volumes:
       - static:/static
@@ -10,6 +20,8 @@ services:
       context: .
     ports:
       - "8000:8000"
+    depends_on:
+      - db
   nginx:
     build: ./nginx
     volumes:
@@ -18,6 +30,5 @@ services:
       - "80:80"
     depends_on:
       - django_gunicorn
-
 volumes:
   static:
